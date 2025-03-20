@@ -1,9 +1,7 @@
 # JeganTwinLB-259
 
-**Beschreibung des Datensatzes:** 
+**Beschreibung des Datensatzes:**
+Der Datensatz „Player_Attributes“ enthält umfangreiche Informationen zu den Leistungsmerkmalen von Fußballspielern, die über verschiedene Zeitpunkte hinweg erfasst wurden. Jede Zeile repräsentiert den Zustand eines Spielers an einem bestimmten Datum und umfasst Kennzahlen wie Overall Rating, Potential, Dribbling und Schusskraft. Zur eindeutigen Zuordnung wird die player_api_id verwendet, ergänzt durch das Erhebungsdatum. Die interne id wurde entfernt, da sie für die inhaltliche Analyse keinen Mehrwert bietet.
 
-
-Der Datensatz enthält Informationen zu Airbnb-Unterkünften in New York City. Insgesamt umfasst er 48.895 Einträge mit 16 Attributen&#8203;:contentReference[oaicite:5]{index=5}. Jede Zeile repräsentiert eine Unterkunft mit Details wie Standort (Stadtbezirk und Viertel), Mietart (z.B. ganzes Apartment oder privates Zimmer), Preis pro Nacht in USD, Mindestaufenthalt in Nächten und Popularitätsmetriken (Anzahl Bewertungen, Bewertungen pro Monat, Verfügbarkeit im Jahr). Diese Daten geben einen logischen Einblick in den Wohnungsmarkt und ermöglichen Alltagsbezüge, etwa zur Analyse von Mietpreisen in verschiedenen Gegenden.
-
-**Datenschutzaspekte:** 
-Dieser offene Datensatz enthält **keine sensiblen persönlichen Daten** über Nutzer. Personenbezogene Felder (z.B. Gastgeber-ID und -Name) sind pseudonymisiert (IDs) oder bestehen aus Vornamen. Sämtliche Daten wurden bereits öffentlich über die Plattform bereitgestellt und unterliegen der CC BY 4.0 Lizenz&#8203;:contentReference[oaicite:6]{index=6}. Bei der Verwendung ist darauf zu achten, **keine Identifizierung einzelner Personen** anzustreben und die Daten nur für den vorgesehenen Zweck (Analyse/Projektarbeit) zu nutzen. Etwaige persönliche Angaben der Anbieter (Hosts) werden im Rahmen des Projekts nicht weiterverarbeitet, womit geltende Datenschutzbestimmungen eingehalten werden.
+**Datenschutzaspekte:**
+Die verwendeten Daten basieren auf öffentlich zugänglichen Informationen und enthalten keine sensiblen personenbezogenen Angaben. Es werden ausschließlich sportbezogene Kennzahlen und pseudonymisierte Identifikatoren (über player_api_id) genutzt, wodurch Rückschlüsse auf einzelne Spieler ausgeschlossen sind. Der Datensatz steht unter einer offenen Lizenz (z. B. CC BY) und ist ausschließlich für akademische und nicht-kommerzielle Zwecke bestimmt. Bei der Nutzung ist sicherzustellen, dass keine persönlichen Daten rekonstruiert werden können.
