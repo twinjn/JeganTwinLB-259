@@ -29,7 +29,12 @@ Das Feld overall_rating bietet eine zusammenfassende Bewertung der spielerischen
 Algorithmuswahl:
 Ein Random‑Forest‑Regressor kombiniert viele Entscheidungsbäume. Dadurch erkennt er auch nicht‑lineare Zusammenhänge zwischen den Spielerattributen und der Gesamtbewertung. Er benötigt kaum Daten‑Skalierung, verträgt Ausreißer gut und liefert oft bessere Ergebnisse als eine einfache lineare Regression, wenn mehrere Merkmale mit unterschiedlichem Einfluss vorliegen. Deshalb ist dieser Algorithmus für unseren Datensatz – mehrere numerische Attribute, die gemeinsam den „overall_rating“ bestimmen – besonders geeignet.
 
-**Ergebnis-Kommentar**
+**Ergebnisbewertung:**  
+Die 5‑fach‑Cross‑Validation ergibt einen mittleren MAE von **1,05** Punkten
+(± 0,01) und einen mittleren R²‑Wert von **0,931** (± 0,001). Das bedeutet,
+dass das Modell die Gesamtbewertung im Durchschnitt bis auf etwa einen
+Punkt genau trifft und über 93 % der Varianz erklären kann. Die geringe
+Standardabweichung zeigt, dass die Leistung in allen Folds stabil ist.
+Damit liefert der Random‑Forest‑Regressor sehr zuverlässige Vorhersagen
+für unseren Datensatz.
 
-Modellbewertung:
-Das Random‑Forest‑Modell erreicht in unserem Test einen mittleren absoluten Fehler von rund 1.13 Punkten und einen R²‑Wert von 0.922. Werte nahe 1,0 bedeuten eine sehr gute Erklärungskraft; Werte um 0,5 gelten als solide. Betrachtet man die Stichprobe, liegen die Vorhersagen meist nur wenige Punkte neben den tatsächlichen Bewertungen. Für eine erste Modellversion liefert der Random Forest damit bereits praxistaugliche Schätzungen, zeigt aber auch Verbesserungspotenzial, etwa durch Fein‑Tuning der Hyperparameter oder zusätzliche Merkmale.
