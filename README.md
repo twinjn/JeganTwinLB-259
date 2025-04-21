@@ -17,3 +17,14 @@ Ich entscheide mich dafür, das Feld overall_rating als Zielvariable (Target) zu
 
 Das Feld overall_rating bietet eine zusammenfassende Bewertung der spielerischen Fähigkeiten und wird häufig als wichtigste Kennzahl im Scouting und in der Fußballanalyse angesehen. Es spiegelt mehrere Leistungsfaktoren wider, etwa Technik, Physis und Spielintelligenz, und lässt sich daher gut als Zielvariable in Vorhersagemodellen nutzen. Indem man overall_rating in Abhängigkeit anderer Attribute wie potential, dribbling oder finishing untersucht, können Muster und Zusammenhänge erkannt werden, die für Transferentscheidungen oder Trainingspläne relevant sind.
 
+Teilauftrag 3
+
+**Warum Random Forest?**
+
+Algorithmuswahl:
+Ein Random‑Forest‑Regressor kombiniert viele Entscheidungsbäume. Dadurch erkennt er auch nicht‑lineare Zusammenhänge zwischen den Spielerattributen und der Gesamtbewertung. Er benötigt kaum Daten‑Skalierung, verträgt Ausreißer gut und liefert oft bessere Ergebnisse als eine einfache lineare Regression, wenn mehrere Merkmale mit unterschiedlichem Einfluss vorliegen. Deshalb ist dieser Algorithmus für unseren Datensatz – mehrere numerische Attribute, die gemeinsam den „overall_rating“ bestimmen – besonders geeignet.
+
+**Ergebnis-Kommentar**
+
+Modellbewertung:
+Das Random‑Forest‑Modell erreicht in unserem Test einen mittleren absoluten Fehler von rund 1.13 Punkten und einen R²‑Wert von 0.922. Werte nahe 1,0 bedeuten eine sehr gute Erklärungskraft; Werte um 0,5 gelten als solide. Betrachtet man die Stichprobe, liegen die Vorhersagen meist nur wenige Punkte neben den tatsächlichen Bewertungen. Für eine erste Modellversion liefert der Random Forest damit bereits praxistaugliche Schätzungen, zeigt aber auch Verbesserungspotenzial, etwa durch Fein‑Tuning der Hyperparameter oder zusätzliche Merkmale.
