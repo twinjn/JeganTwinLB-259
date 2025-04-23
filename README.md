@@ -21,6 +21,9 @@ Ich entscheide mich dafür, das Feld overall_rating als Zielvariable (Target) zu
 
 Das Feld overall_rating bietet eine zusammenfassende Bewertung der spielerischen Fähigkeiten und wird häufig als wichtigste Kennzahl im Scouting und in der Fußballanalyse angesehen. Es spiegelt mehrere Leistungsfaktoren wider, etwa Technik, Physis und Spielintelligenz, und lässt sich daher gut als Zielvariable in Vorhersagemodellen nutzen. Indem man overall_rating in Abhängigkeit anderer Attribute wie potential, dribbling oder finishing untersucht, können Muster und Zusammenhänge erkannt werden, die für Transferentscheidungen oder Trainingspläne relevant sind.
 
+**Histogramm-Analyse**
+
+Histogramm und Median zeigen, dass sich die Gesamtbewertung leicht links-schief mit Schwerpunkt 60 – 75 Punkten verteilt.
 
 # Teilauftrag 3
 
