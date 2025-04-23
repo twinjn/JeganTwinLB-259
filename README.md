@@ -31,4 +31,4 @@ Für die Prognose des Feldes **overall_rating** wurde ein Random-Forest-Regresso
 
 **Feature-Skalierung:**
 
- Da Random-Forest ein baumbasierter Algorithmus ist, benötigt er keine Normierung der Eingangsmerkmale.(2.4, aber in Teilauftrag 2 eingefügt, da es 2.4 ist)
+Da der Random-Forest baumbasiert arbeitet, ist keine Feature-Skalierung erforderlich..(2.4, aber in Teilauftrag 2 eingefügt, da es 2.4 ist)
