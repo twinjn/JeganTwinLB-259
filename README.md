@@ -29,3 +29,6 @@ Histogramm und Median zeigen, dass sich die Gesamtbewertung leicht links-schief 
 
 Für die Prognose des Feldes **overall_rating** wurde ein Random-Forest-Regressor mit sieben numerischen Merkmalen trainiert. Eine 5-fach-Cross-Validation ergab einen mittleren MAE von **1,05 Punkten** (± 0,01) und einen mittleren R²-Wert von **0,931** (± 0,001). Das Modell sagt die Gesamtbewertung somit im Schnitt bis auf etwa einen Punkt genau voraus und erklärt über 93 % der Varianz – bei sehr geringer Streuung zwischen den Folds. Die Stichproben-Tabelle bestätigt diese Güte: Vorhersagen und Ist-Werte liegen fast deckungsgleich, Ausreisser bleiben selten. Damit erfüllt das Modell die Qualitäts­anforderungen deutlich.
 
+**Feature-Skalierung:**
+
+ Da Random-Forest ein baumbasierter Algorithmus ist, benötigt er keine Normierung der Eingangsmerkmale.(2.4, aber in Teilauftrag 2 eingefügt, da es 2.4 ist)
