@@ -22,3 +22,7 @@ Ich entscheide mich dafür, das Feld overall_rating als Zielvariable (Target) zu
 Das Feld overall_rating bietet eine zusammenfassende Bewertung der spielerischen Fähigkeiten und wird häufig als wichtigste Kennzahl im Scouting und in der Fußballanalyse angesehen. Es spiegelt mehrere Leistungsfaktoren wider, etwa Technik, Physis und Spielintelligenz, und lässt sich daher gut als Zielvariable in Vorhersagemodellen nutzen. Indem man overall_rating in Abhängigkeit anderer Attribute wie potential, dribbling oder finishing untersucht, können Muster und Zusammenhänge erkannt werden, die für Transferentscheidungen oder Trainingspläne relevant sind.
 
 
+# Teilauftrag 3
+
+Für die Prognose des Feldes **overall_rating** wurde ein Random-Forest-Regressor mit sieben numerischen Merkmalen trainiert. Eine 5-fach-Cross-Validation ergab einen mittleren MAE von **1,05 Punkten** (± 0,01) und einen mittleren R²-Wert von **0,931** (± 0,001). Das Modell sagt die Gesamtbewertung somit im Schnitt bis auf etwa einen Punkt genau voraus und erklärt über 93 % der Varianz – bei sehr geringer Streuung zwischen den Folds. Die Stichproben-Tabelle bestätigt diese Güte: Vorhersagen und Ist-Werte liegen fast deckungsgleich, Ausreißer bleiben selten. Damit erfüllt das Modell die Qualitäts­anforderungen deutlich.
+
