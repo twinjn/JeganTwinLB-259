@@ -23,7 +23,7 @@ Das Feld overall_rating bietet eine zusammenfassende Bewertung der spielerischen
 
 **Histogramm-Analyse**
 
-Histogramm und Median zeigen, dass sich die Gesamtbewertung leicht links-schief mit Schwerpunkt 60 – 75 Punkten verteilt.
+Histogramm und Median zeigen, dass sich die Gesamtbewertung leicht mit Schwerpunkt 65-75 Punkten verteilt wobei der Wert 69 der Median ist.
 
 # Teilauftrag 3
 
