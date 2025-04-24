@@ -25,17 +25,32 @@ Das Feld overall_rating bietet eine zusammenfassende Bewertung der spielerischen
 
 Histogramm und Median zeigen, dass sich die Gesamtbewertung leicht mit Schwerpunkt 62-73 Punkten verteilt wobei der Wert 69 der Median ist.
 
-# Teilauftrag 3
+**Teilauftrag 3 – Modell**
 
-Für die Prognose des Feldes **overall_rating** wurde ein Random-Forest-Regressor mit sieben numerischen Merkmalen trainiert. Eine 5-fach-Cross-Validation ergab einen mittleren MAE von **1,05 Punkten** (± 0,01) und einen mittleren R²-Wert von **0,931** (± 0,001). Das Modell sagt die Gesamtbewertung somit im Schnitt bis auf etwa einen Punkt genau voraus und erklärt über 93 % der Varianz – bei sehr geringer Streuung zwischen den Folds. Die Stichproben-Tabelle bestätigt diese Güte: Vorhersagen und Ist-Werte liegen fast deckungsgleich, Ausreisser bleiben selten. Damit erfüllt das Modell die Qualitäts­anforderungen deutlich.
+Für die Prognose des Feldes **`overall_rating`** wurde ein Random-Forest-Regressor mit sieben numerischen Merkmalen trainiert.  
+Die **5-fach-Cross-Validation** ergab einen **mittleren MAE von ≈ 1,19 Punkten (± 0,01)** und einen **mittleren R²-Wert von ≈ 0,918 (± 0,002)**.  
+Damit trifft das Modell die Gesamtbewertung im Schnitt **auf gut einen Punkt genau** und erklärt **rund 92 % der Varianz** – bei minimaler Streuung zwischen den Folds.  
+Eine Stichproben-Tabelle bestätigt die Güte: Vorhersagen und Ist-Werte liegen nahezu deckungsgleich, grössere Ausreisser sind selten.
 
-**Feature-Skalierung:**
+*Feature-Skalierung:*  
+Der Random-Forest ist baumbasiert; daher ist **keine Skalierung der Features erforderlich** (Kriterium 2.4).
 
-Da der Random-Forest baumbasiert arbeitet, ist keine Feature-Skalierung erforderlich..(2.4, aber in Teilauftrag 2 eingefügt, da es 2.4 ist)
+---
 
-# Teilauftrag 4
+**Teilauftrag 4 – Evaluation**
 
-**Evaluation Zusammenfassung**
-Die Testdaten zeigen einen MAE von 0,99 und einen RMSE von 1,73 Punkten.
-Die 5-fach-Cross-Validation liefert ein RMSE von 1,50 ± 0,14, was auf eine stabile Modell­leistung hindeutet. Klassifizieren wir Spieler mit ≥ 75 Punkten als „Top“, erreicht das Modell eine Sensitivität von 83,6 % und eine Spezifität von 99,6 %. Die Confusion-Matrix bestätigt, dass nur wenige Durchschnitts­spieler fälschlich als Top prognostiziert werden. Insgesamt liefert der Random-Forest sehr präzise und robuste Vorhersagen für diesen Datensatz.
+*Hold-out-Ergebnis* (20 % Testdaten)  
+* **MAE:** **1,13**  * **RMSE:** **1,97**
 
+*5-fach-Cross-Validation*  
+* **RMSE:** **1,85 ± 0,02**
+
+*Binäre Klassifikation* (Schwelle ≥ 75 Punkte = „Top“)  
+
+| Kennzahl | Wert |
+|----------|------|
+| **Sensitivität** (Top korrekt erkannt) | **≈ 78 %** |
+| **Spezifität** (Durchschnitt korrekt ausgeschlossen) | **≈ 99 %** |
+
+Die Confusion-Matrix zeigt, dass **Fehlalarme äusserst selten** sind und nur wenige Top-Spieler übersehen werden.  
+Insgesamt liefert der Random-Forest **präzise und robuste Vorhersagen**, die auf neuen Daten stabil bleiben und die Qualitätsanforderungen deutlich erfüllen.
