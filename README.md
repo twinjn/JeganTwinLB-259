@@ -32,3 +32,10 @@ Für die Prognose des Feldes **overall_rating** wurde ein Random-Forest-Regresso
 **Feature-Skalierung:**
 
 Da der Random-Forest baumbasiert arbeitet, ist keine Feature-Skalierung erforderlich..(2.4, aber in Teilauftrag 2 eingefügt, da es 2.4 ist)
+
+# Teilauftrag 4
+
+**Evaluation Zusammenfassung**
+Die Testdaten zeigen einen MAE von 0,99 und einen RMSE von 1,73 Punkten.
+Die 5-fach-Cross-Validation liefert ein RMSE von 1,50 ± 0,14, was auf eine stabile Modell­leistung hindeutet. Klassifizieren wir Spieler mit ≥ 75 Punkten als „Top“, erreicht das Modell eine Sensitivität von 83,6 % und eine Spezifität von 99,6 %. Die Confusion-Matrix bestätigt, dass nur wenige Durchschnitts­spieler fälschlich als Top prognostiziert werden. Insgesamt liefert der Random-Forest sehr präzise und robuste Vorhersagen für diesen Datensatz.
+
